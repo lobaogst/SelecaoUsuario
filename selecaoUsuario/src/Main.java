@@ -2,9 +2,20 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class Main {
     public static void main(String[] args) {
-        selecaoCandidatos();
+       
+        imprimirSelecionados();
     }
+static  void imprimirSelecionados(){
+    String [] candiatos ={"Daniel", "Raquel", "Rafael", "Karinna", "Simone"};
+    System.out.println("Imprimindo a lista de caditados informando o indice do elemento");
+    
+    
+    
+        for(int indice =0; indice < candiatos.length; indice++){
+            System.out.println("o canditado selecionado  é "+candiatos[indice] );
 
+        }
+}
     static void selecaoCandidatos() {
         String[] candidatos = {"Daniel1", "Daniel2", "Daniel3", "Daniel", "Raquel", "Rafael", "Karinna", "Simone"};
         int candidatosSelecionados = 0;
